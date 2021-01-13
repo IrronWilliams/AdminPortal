@@ -1,0 +1,369 @@
+/*Global Styles*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+    
+}
+
+li, p, input, label, button{
+    font-size: 2rem;
+
+}
+
+a{
+    color: white;
+    text-decoration: none; /*removes underline text*/
+}
+
+body{
+    background-color: rgb(247, 247, 245);
+}
+
+
+/*Sidebar Section*/
+
+.sidenav {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 25rem; /*move down*/
+    left: 2rem;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 1rem; /*8px 0*/
+    border-radius: 5%; /*rounding corders*/
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+
+/*Nav Section*/
+.main-head{
+    background: #131c27;
+    position: sticky;
+    top: 0px; /*sticky activates when top of page hits 0 pixels*/
+    /* margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem; */
+}
+
+nav{
+    min-height: 5vh; /*without height, height of nav will be based upon the font size. want nav to be 10% of screen size*/
+    display: flex;
+    width: 100%;
+    /* margin: auto; */
+
+}
+
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;  /*can control space as it relates to other parts of nav. can make this section 2x the size of icons*/
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.mh-content, .mh-media, .mh-users{ /*adding padding between Content, Media, Users*/
+    padding: 2.5rem;
+}
+.navicons{
+    display: flex;
+    flex: 1 1 40rem;  /*can control space as it relates to other parts of nav. can make this section 2x the size of icons */
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.mh-search, .mh-question, .mh-user{ /*adding padding between images in nav*/
+    padding: 2rem;
+}
+
+/*Nav Section2*/
+.main-head2{
+    border: .1rem solid black;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-height: 7vh;
+}
+
+.mh2box{
+    flex-grow: 1; /*setting baseline for Social Services to be 2x size */
+    font-size: 1.2rem;
+}
+
+.mh2-box2{
+    flex-grow: 3; /*setting baseline for Social Services be Xx the size of others in div */
+    border: .1rem solid black;
+    padding: 1rem;
+}
+
+.mh2-box3{
+    padding-left: 10rem; /*adding space between Social Service box and menu icon*/
+}
+
+/*info collection section*/
+.info-collected{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    min-height: 5vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-collected-desc a{  
+    color: blue;
+}
+
+.info-collected-desc a:active{
+    background-color: greenyellow;
+}
+
+.info-collected-desc a:hover{
+    background-color: yellow;
+}
+
+
+/*Form Section*/
+.form-container {
+    min-height: 65vh;  /*Sizing whole form*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+}
+
+.form-wrapper{
+    background: rgba(237, 239, 241, 0.664);  /*Applying background color to form*/
+    width: 60%;
+    color: rgb(10, 10, 10);
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.form-head{
+    text-align: center;
+    padding: 0rem;
+    }
+
+
+.service-provider-name-form, .service-name-form, .short-description-form,
+.long-description-form
+{
+    padding: 3rem;
+  
+    /* text-align: left; */
+}
+
+
+.form-wrapper label{
+    margin: 0rem 3rem; /*separates/puts space between label from input*/
+
+}
+
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px; /*rounding out the bottom corner of button*/
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input{
+    padding: 1rem 3rem;   /*adding more space in the form input. 1rem on top/bottom, 3rem on side.  */
+    width: 70%;
+}
+
+.short-p{
+    text-align: center; /*managing Max 160 char size*/
+    
+}
+
+.short-description-form input{
+    padding: 4rem 3rem;   /*adding more space in the long desc form input. 6rem on top/bottom, 3rem on side.  */
+}
+
+.long-description-form input{
+    padding: 4rem 3rem;   /*adding more space in the long desc form input. 6rem on top/bottom, 3rem on side.  */
+}
+
+.service-name-form input, .service-provider-name-form input {
+    margin: 0rem 2.5rem; /*input was not aligning with others*/
+}
+
+.service-provider-name-form input {
+    margin: 0rem 1.0rem; /*input was not aligning with others*/
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav_list a{
+    color: black;
+}
+
+
+/*populations toggle*/
+.line2{               
+    /* position: relative;
+    background: yellow; */
+    background: yellowgreen;
+    width: 3rem;
+    height: 1rem;
+    border-radius: 0rem;
+    display: inline;
+    position: relative;
+
+}
+
+/*styling the populations toggle button*/
+.population-toggle { 
+    padding: 2rem;
+    background: transparent;
+    border: .2rem solid black;
+    cursor: pointer;
+    position: absolute;
+    /* right: 2rem; */
+    top: 35rem;
+    left: 75rem;
+    z-index: 1000;
+    /* display: inline-block; */
+    /* transition: .3s; */
+}
+
+/*when the add population button is clicked, adding a new class to the div called 'populations-toggle'. 
+List of populations appears as a list on screen. this list comes from the population-hides2 div. function 
+has toggle method, so options disappear when button is clicked again. function in app.js
+*/
+.populations-toggle .population-hides2 { 
+    /* transform: translateX(50%); */
+    background: lightgray;
+    width: 100%;
+    height: 100%; /*controls height of window*/
+    position: fixed;
+    top: 0%;
+    left: 70%;  /*moves window 50% of screen*/
+    list-style-type: none;
+  
+   
+}
+
+/*positioning the population-toggle button */
+.populations-toggle .population-toggle { 
+    position: fixed;
+}
+
+/* 
+.population-hides2{
+    visibility: hidden;
+} */
+
+/* .line2,
+.line2::before,
+.line2::after {
+    background: pink;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.line2::before,
+.line2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.line2::before { top: 16px; }
+.line2::after { bottom: 16px; } */
+
+
+
+
+
+
+
+
+
+
+
+/*Footer Section */
+footer{
+    border: .1rem solid black;
+    /* display: flex */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+  
+}
+
+footer a{
+    color: black; 
+
+}
+
+footer ul{
+    display: flex;
+   list-style: none;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 5vh;
+   /* margin: auto; */
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+
+ .footer-buttons{
+    display: flex;
+    /* flex: 1 1 40rem; */
+ }
+
+ .buttons{
+     display: flex;  
+ }
+
+ /* .button1, .button2, .button3{
+     padding: 2rem;
+ } */
+
+
+
+button{
+    /* background-color: none; */
+    border: none;
+    background-color: transparent;
+    /* outline: none; */
+    font-size: 1.9rem;
+    padding: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+   
+}

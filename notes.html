@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="clone of Umbraco back office">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles.css">
+    <title>AdminPortal</title>
+</head>
+
+<body>   
+
+    <!-- sidenav  -->
+    <div class="sidenav">
+        <a href="#oregon">OR Covid Support</a>
+        <a href="#resources">Resources</a>
+        <a href="#farms">Farms and Farmers Markets</a>
+        <a href="#food">Food Resources</a>
+        <a href="#pharmacy">Pharmacies</a>
+        <a href="#pets">Pet Supplies</a>
+        <a href="#services">Social Services</a>
+        <a href="#setting">Settings</a>
+        <a href="#food">Food Resources</a>
+        <a href="#msc">Msc</a>
+        <a href="#recycle">Recycle Bin</a>
+      </div>
+      
+    
+     <!-- mainnav  -->
+    <header class="main-head">
+        <nav>
+            <ul>
+                <div class="mh-content">
+                    <li><a href="#content">Content</a></li>
+                </div>
+                <div class="mh-media">
+                    <li><a href="#media">Media</a></li>
+                </div>
+                <div class="mh-users">
+                    <li><a href="#users">Users</a></li>
+                </div>
+            </ul>
+            <ul class="navicons"> 
+                <div class="mh-search">
+                    <img src="./icons/search.svg" alt="" width="25" height="25" > 
+                </div>
+                <div class="mh-question">
+                    <img src="./icons/question.svg" alt="" width="25" height="25">   
+                </div>
+                <div class="mh-user">
+                    <img src="./icons/user.svg" alt="" width="25" height="25"> 
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- subnav  -->
+    <section class="main-head2">
+        <div class='mh2-box1 mh2box'>
+            <h1>English(United States)</h1>
+        </div>
+        <div class='mh2-box2 mh2box'>
+            <label>Resource Info Will Display Here</label>   
+        </div>
+        <div class="mh2-box3 mh2box">
+            <img src="./icons/menu.svg" alt="" width="25" height="25" > 
+        </div>
+        <div class="mh2-box4 mh2box">
+            <img src="./icons/info.svg" alt="" width="25" height="25"> 
+        </div>
+        <div class="mh2-box4 mh2box">
+            <h1>Actions</h1>
+        </div>
+    </section>
+
+     <!-- info collected for a given resource -->
+    <section class="info-collected"> 
+        <div class='info-collected-desc'>
+            <a href="./index.html">Provider</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./notes.html">Internal Notes</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./access.html">Access</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./location.html">Location</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./opentimes.html">Opening Times</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./populations.html">Populations Served</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./language.html">Languages Supported</a>
+        </div>
+        <div class="info-collected-desc">
+            <a href="./categories.html">Categories</a>
+        </div>
+    </section>
+
+     <!-- form -->
+    <section class="form-container">
+        <div class="form-wrapper">
+            <header class="form-head">
+            </header>
+        <form>
+            <div class='service-provider-name-form'>
+                <label for="name">Resource Steward</label>
+                <input type="text" name="name" required/>
+                <div class="short-p">
+                    <h2>Name of the person in charge of updating the information within the database</h2>
+                </div>
+            </div>
+            <div class="service-name-form">
+                <label for="email">Translation Steward</label>
+                <input type="text" name="name" required />   
+                <div class="short-p">
+                    <h2>Name of the person in charge of translating the information within the database</h2>
+                </div>
+            </div>
+            <div class='short-description-form'>
+                <label for="name">Resource Contact Name</label>
+                <input type="text" name="name" required/>
+                <div class="short-p">
+                    <h2>Name of the person with the resource provider</h2>
+                </div>
+            </div>
+            <div class='long-description-form'>
+                <label for="name">Resource Contact Form</label>
+                <input type="text" name="name" required/>
+                <div class="short-p">
+                    <h2>Format xxx-xxx-xxxx or xxx-xxx-xxxx.eeee</h2>
+                </div>
+            </div>
+            <div class='long-description-form'>
+                <label for="name">Resource Contact Email</label>
+                <input type="text" name="name" required/>
+            </div>
+            <div class='long-description-form'>
+                <label for="name">Resource Contact Notes</label>
+                <input type="text" name="name" required/>
+            </div>
+            <div class='long-description-form'>
+                <label for="name">Other Notes</label>
+                <input type="text" name="name" required/>
+            </div>
+        </form>
+    </div>
+</section>
+
+ <!-- footer  -->
+<footer>
+    <div class="footer-wrapper"></div>
+    <ul>
+        <li>
+            <a href="#orsupport">OR Covid Support</a>
+        </li>
+        <li>
+            <a href="#resources">Resources</a>
+        </li>
+        <li>
+            <a href="#socialservices">Social Services</a>
+        </li>
+        <div class="footer-buttons">
+            <ul> 
+                <div class="buttons">
+                    <li class="button1">
+                        <button type="submit">Preview</button>
+                    </li>
+                    <li class="button2">
+                        <button type="submit">Save</button>
+                    </li>
+                    <li class="button3">
+                        <button type="submit" style="color:green">Save & Publish</button>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </ul>
+</footer>
+
+ <!-- additional space at end  -->
+<section>
+    <br/>
+    <br/>
+    <br/>
+</section>
+
+</body>
+</html>
+
+
+
